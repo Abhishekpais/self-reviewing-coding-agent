@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Local environment config (keep .env.example tracked)
+.env
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Ignore all generated data inside sandbox/workspaces/
+sandbox/workspaces/*
+sandbox/.snapshot_src/
+
+# Force Git to keep the empty sandbox/workspaces/ folder
+!sandbox/workspaces/.gitkeep
